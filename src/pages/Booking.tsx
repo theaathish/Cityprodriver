@@ -563,6 +563,15 @@ const Booking = () => {
                                   : 'Included'}
                               </span>
                             </div>
+                            <div className="flex justify-between">
+                              <span className="text-muted-foreground">Food allowance:</span>
+                              <span className="font-medium">
+                                {formatCurrency(selectedTariff.outstationTariff.foodAllowance)}/day
+                              </span>
+                            </div>
+                            <div className="pt-2 mt-2 border-t border-border text-[10px] text-muted-foreground italic">
+                              * {selectedTariff.outstationTariff.accommodation}
+                            </div>
                           </div>
                         )}
                       </motion.div>

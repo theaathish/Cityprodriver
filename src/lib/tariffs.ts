@@ -19,6 +19,8 @@ export interface TariffDetails {
     extraPerKm: number;
     driverBatta: number;
     extraPerHour?: number;
+    foodAllowance: number;
+    accommodation: string;
   };
   nightCharges?: {
     time4am: number;
@@ -47,6 +49,8 @@ export const VEHICLE_TARIFFS: TariffDetails[] = [
       extraPerKm: 0,
       driverBatta: 200,
       extraPerHour: 100,
+      foodAllowance: 200,
+      accommodation: 'Proper accommodation required for drivers during night stays',
     },
     nightCharges: {
       time4am: 100,
@@ -69,6 +73,8 @@ export const VEHICLE_TARIFFS: TariffDetails[] = [
       perDayAmount: 0,
       extraPerKm: 0,
       driverBatta: 0,
+      foodAllowance: 200,
+      accommodation: 'Proper accommodation required for drivers during night stays',
     },
   },
   {
@@ -90,6 +96,8 @@ export const VEHICLE_TARIFFS: TariffDetails[] = [
       perDayAmount: 3500,
       extraPerKm: 14,
       driverBatta: 600,
+      foodAllowance: 200,
+      accommodation: 'Proper accommodation required for drivers during night stays',
     },
   },
   {
@@ -111,6 +119,8 @@ export const VEHICLE_TARIFFS: TariffDetails[] = [
       perDayAmount: 5000,
       extraPerKm: 20,
       driverBatta: 700,
+      foodAllowance: 200,
+      accommodation: 'Proper accommodation required for drivers during night stays',
     },
   },
   {
@@ -132,6 +142,8 @@ export const VEHICLE_TARIFFS: TariffDetails[] = [
       perDayAmount: 5500,
       extraPerKm: 22,
       driverBatta: 700,
+      foodAllowance: 200,
+      accommodation: 'Proper accommodation required for drivers during night stays',
     },
   },
   {
@@ -153,6 +165,8 @@ export const VEHICLE_TARIFFS: TariffDetails[] = [
       perDayAmount: 6250,
       extraPerKm: 25,
       driverBatta: 700,
+      foodAllowance: 200,
+      accommodation: 'Proper accommodation required for drivers during night stays',
     },
   },
   {
@@ -174,6 +188,8 @@ export const VEHICLE_TARIFFS: TariffDetails[] = [
       perDayAmount: 6250,
       extraPerKm: 25,
       driverBatta: 600,
+      foodAllowance: 200,
+      accommodation: 'Proper accommodation required for drivers during night stays',
     },
   },
   {
@@ -195,6 +211,8 @@ export const VEHICLE_TARIFFS: TariffDetails[] = [
       perDayAmount: 6250,
       extraPerKm: 25,
       driverBatta: 1000,
+      foodAllowance: 200,
+      accommodation: 'Proper accommodation required for drivers during night stays',
     },
   },
   {
@@ -216,6 +234,8 @@ export const VEHICLE_TARIFFS: TariffDetails[] = [
       perDayAmount: 6250,
       extraPerKm: 25,
       driverBatta: 1000,
+      foodAllowance: 200,
+      accommodation: 'Proper accommodation required for drivers during night stays',
     },
   },
   {
@@ -236,6 +256,8 @@ export const VEHICLE_TARIFFS: TariffDetails[] = [
       perDayAmount: 10500,
       extraPerKm: 35,
       driverBatta: 1000,
+      foodAllowance: 200,
+      accommodation: 'Proper accommodation required for drivers during night stays',
     },
   },
   {
@@ -256,6 +278,8 @@ export const VEHICLE_TARIFFS: TariffDetails[] = [
       perDayAmount: 11400,
       extraPerKm: 38,
       driverBatta: 1000,
+      foodAllowance: 200,
+      accommodation: 'Proper accommodation required for drivers during night stays',
     },
   },
   {
@@ -276,6 +300,8 @@ export const VEHICLE_TARIFFS: TariffDetails[] = [
       perDayAmount: 12000,
       extraPerKm: 40,
       driverBatta: 1000,
+      foodAllowance: 200,
+      accommodation: 'Proper accommodation required for drivers during night stays',
     },
   },
   {
@@ -293,6 +319,8 @@ export const VEHICLE_TARIFFS: TariffDetails[] = [
       perDayAmount: 18750,
       extraPerKm: 75,
       driverBatta: 1000,
+      foodAllowance: 200,
+      accommodation: 'Proper accommodation required for drivers during night stays',
     },
   },
   {
@@ -310,6 +338,8 @@ export const VEHICLE_TARIFFS: TariffDetails[] = [
       perDayAmount: 26250,
       extraPerKm: 105,
       driverBatta: 1000,
+      foodAllowance: 200,
+      accommodation: 'Proper accommodation required for drivers during night stays',
     },
   },
   {
@@ -327,6 +357,8 @@ export const VEHICLE_TARIFFS: TariffDetails[] = [
       perDayAmount: 40000,
       extraPerKm: 160,
       driverBatta: 1000,
+      foodAllowance: 200,
+      accommodation: 'Proper accommodation required for drivers during night stays',
     },
   },
   {
@@ -344,6 +376,8 @@ export const VEHICLE_TARIFFS: TariffDetails[] = [
       perDayAmount: 27000,
       extraPerKm: 90,
       driverBatta: 1300,
+      foodAllowance: 200,
+      accommodation: 'Proper accommodation required for drivers during night stays',
     },
   },
   {
@@ -361,6 +395,8 @@ export const VEHICLE_TARIFFS: TariffDetails[] = [
       perDayAmount: 200000,
       extraPerKm: 800,
       driverBatta: 1500,
+      foodAllowance: 200,
+      accommodation: 'Proper accommodation required for drivers during night stays',
     },
   },
 ];
