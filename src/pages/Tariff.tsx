@@ -131,9 +131,9 @@ const Tariff = () => {
                     <div className="flex items-start gap-3">
                       <Car className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                       <div>
-                        <p className="font-semibold">Food Allowance</p>
+                        <p className="font-semibold">Food Allowance (Outstation)</p>
                         <p className="text-sm text-muted-foreground">
-                          {formatCurrency(actingDriverTariff.outstationTariff.driverBatta)} or Food for Driver
+                          {formatCurrency(actingDriverTariff.outstationTariff.foodAllowance)} - Applicable for Outstation duty only
                         </p>
                       </div>
                     </div>
@@ -180,6 +180,11 @@ const Tariff = () => {
                         </div>
                       </AlertDescription>
                     </Alert>
+                  </div>
+                  
+                  <div className="mt-4 text-sm text-muted-foreground flex items-center gap-2">
+                    <Info className="w-4 h-4 text-primary" />
+                    <span>Proper accommodation required for drivers during night stays.</span>
                   </div>
                 </CardContent>
               </Card>
@@ -320,6 +325,15 @@ const Tariff = () => {
                                 {formatCurrency(tariff.outstationTariff.driverBatta)}/day
                               </span>
                             </div>
+                            <div className="flex justify-between items-center text-sm">
+                              <span className="text-muted-foreground">Food Allowance</span>
+                              <span className="font-medium">
+                                {formatCurrency(tariff.outstationTariff.foodAllowance)}/day
+                              </span>
+                            </div>
+                            <div className="pt-2 mt-2 border-t text-[10px] text-muted-foreground italic">
+                              * {tariff.outstationTariff.accommodation}
+                            </div>
                           </div>
                         </div>
                       )}
@@ -346,7 +360,8 @@ const Tariff = () => {
                   <li>Toll charges, parking fees, and state permits are extra</li>
                   <li>Night fare applies from 10:00 PM to 6:00 AM (₹50 to ₹100 extra)</li>
                   <li>Cancellation fee of ₹50 applies if cancelled within 30 mins of reporting</li>
-                  <li>Outstation trips: Food allowance (₹200) or provide food</li>
+                  <li>Outstation trips: Food allowance (₹200) is applicable for Outstation duty only</li>
+                  <li>Proper accommodation required for drivers during night stays.</li>
                   <li>Valet Parking: Neat uniform and valet tags provided</li>
                   <li>Prices subject to change during peak seasons and festivals</li>
                 </ul>
