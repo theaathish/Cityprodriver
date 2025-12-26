@@ -81,7 +81,7 @@ const Index = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="flex flex-wrap items-center justify-center gap-3 mb-6"
+              className="flex flex-wrap items-center justify-center gap-4 mb-6"
             >
               <span className="inline-block bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold">
                 Your Car. Our Driver.

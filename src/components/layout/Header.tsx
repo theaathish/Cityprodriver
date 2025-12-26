@@ -31,16 +31,6 @@ export function Header() {
                 alt="City Pro Drivers"
                 className="h-10 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="hidden lg:block overflow-hidden">
-                <div className="flex flex-col">
-                  <p className="text-[10px] uppercase tracking-tighter text-muted-foreground font-bold whitespace-nowrap">
-                    Registered under Govt of India
-                  </p>
-                  <p className="text-[10px] text-muted-foreground/80 font-semibold">
-                    GST: 33ATBPP4186E1ZS
-                  </p>
-                </div>
-              </div>
             </Link>
           </div>
 
